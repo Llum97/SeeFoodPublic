@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/app_cover_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Register new account"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/app_stroke_cover"
+            android:hint="Name"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#2C681A"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/app_stroke_cover"
+            android:hint="Email"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#2C681A"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_stroke_cover"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#2C681A"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/register"
+            style="@style/AppTheme.MainPageButton"
+            android:layout_width="380dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/app_button_color"
+            android:elevation="@android:dimen/thumbnail_width"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:typeface="sans"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SeeFood</string>
+    <string name="settings">Settings</string>
+    <string name="weekly_avg">Weekly Average</string>
+    <string name="today_intake">Today\'s Intake</string>
+    <string name="changeUsername">Change Username</string>
+    <string name="changePassword">Change Password</string>
+    <string name="changeColor">Change Color</string>
+    <string name="clearData">Clear Data</string>
+    <string name="addIntake">Add Manual Intake</string>
+    <string name="returnToDashboard">Return to Dashboard</string>
+
+</resources>

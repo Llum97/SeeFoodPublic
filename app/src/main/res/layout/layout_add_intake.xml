@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RadioGroup
+        android:id="@+id/nutrientGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dbeceb"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your nutritional intake"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/cholAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cholesterol"
+            android:onClick="set_chol"/>
+
+        <RadioButton
+            android:id="@+id/satFatAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturated Fat"
+            android:onClick="set_sat_fat"/>
+
+        <RadioButton
+            android:id="@+id/totFatAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Fat"
+            android:onClick="set_tot_fat"/>
+
+        <RadioButton
+            android:id="@+id/sodiumAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="set_sodium"
+            android:text="Sodium" />
+
+        <RadioButton
+            android:id="@+id/dietFiberAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dietary Fiber"
+            android:onClick="set_diet_fib"/>
+
+        <RadioButton
+            android:id="@+id/totCarbAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Carbohydrate"
+            android:onClick="set_tot_carb"/>
+    </RadioGroup>
+
+    android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/amount"
+        android:hint="Add value"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/dialogConfirmButton"
+            android:text="Confirm"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/dialogCancelBtn"
+            android:text="Cancel"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

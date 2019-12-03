@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/app_stroke_cover"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:typeface="sans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011" />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="44dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        style="@style/AppTheme.MainPageButton"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/app_button_color"
+        android:elevation="@android:dimen/thumbnail_width"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        android:id="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/returnToDashboard" />
+
+    <Button
+        style="@style/AppTheme.MainPageButton"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/app_button_color"
+        android:elevation="@android:dimen/thumbnail_width"
+        android:text="@string/returnToDashboard"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        android:id="@+id/returnToDashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addIntake" />
+
+    <Button
+        android:id="@+id/addIntake"
+        style="@style/AppTheme.MainPageButton"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/app_button_color"
+        android:elevation="@android:dimen/thumbnail_width"
+        android:text="@string/addIntake"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearData" />
+
+    <Button
+        android:id="@+id/clearData"
+        style="@style/AppTheme.MainPageButton"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/app_button_color"
+        android:elevation="@android:dimen/thumbnail_width"
+        android:text="@string/clearData"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePassword" />
+
+    <Button
+        android:id="@+id/changePassword"
+        style="@style/AppTheme.MainPageButton"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/app_button_color"
+        android:elevation="@android:dimen/thumbnail_width"
+        android:text="@string/changePassword"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeUsername" />
+
+    <Button
+        android:id="@+id/changeUsername"
+        style="@style/AppTheme.MainPageButton"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/app_button_color"
+        android:elevation="@android:dimen/thumbnail_width"
+        android:text="@string/changeUsername"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
