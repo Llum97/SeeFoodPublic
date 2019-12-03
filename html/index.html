@@ -1,0 +1,124 @@
+<html>
+<header>
+  <title>SeeFood</title>
+</header>
+
+<body>
+  <style type="text/css">
+    .tg {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    .tg td {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      padding: 10px 5px;
+      border-style: solid;
+      border-width: 1px;
+      overflow: hidden;
+      word-break: normal;
+    }
+
+    .tg th {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      padding: 10px 5px;
+      border-style: solid;
+      border-width: 1px;
+      overflow: hidden;
+      word-break: normal;
+    }
+  </style>
+  <table class="tg">
+    <tr>
+      <td class="tg-031e"><img src="icon.png" width=32 height=32></td>
+      <td class="tg-031e">SeeFood</td>
+    </tr>
+    <tr>
+      <td class="tg-031e" colspan="2">External link to .apk</td>
+    </tr>
+    <tr>
+      <td class="tg-031e" colspan="2">External link to source zip</td>
+    </tr>
+    <tr>
+      <td class="tg-031e" colspan="2">
+        This app helps users to keep track of their daily nutrition intake based on a default 2000 calories diet. <br>
+        Users will get a picture of a nutrition label package indicated on goods they bought from the folder. <br>
+        Then, the nutrition values and breakdown from the label will stored onto a firestore database <br>
+        The app will pull the data from the firestore database and display it in the piecharts. <br>
+        The piecharts will show the amount of intake when selected on the screen as well as how much left is needed to reach the daily goal. <br>
+        Chart drawn on the app comes in six parts, showing each of the following nutritional values. <br>
+        <ul>
+            <li>Cholesterol</li>
+            <li>Saturated Fat</li>
+            <li>Total Fat</li>
+            <li>Dietary Fiber</li>
+            <li>Total Carbohydrate</li>
+            <li>Sodium</li>
+        </ul>
+        Each of the chart displays in different color indicator. <br>
+        <ul>
+            <li>Grey means zero intake.</li>
+            <li>Colored means there are some intake. There are two different color, green and blue base color.<br>
+                Each of the color has lighter color and darker color version of it.
+                The lighter color means the users' input values for the day, while the darker color means the daily recommended intake.</li>
+            <li>Red means the user has exceeded the daily intake value.</li>
+        </ul>
+        The user can modify their information stored in the database through the settings page.<br>
+        The settings page has five buttons:
+        <ul>
+            <li>Change username: To change the users' name displayed on the header of the dashboard.</li>
+            <li>Change password: To change the users' old password to a new password. Minimum of length 6<b>*</b>.</li>
+            <li>Clear Data: To clear the users' current day of daily intake of nutrients in the database.</li>
+            <li>Return to Dashboard: Go back to the dashboard where the piecharts are displayed.</li>
+            <li>Logout: Log the user out from the app.</li>
+        </ul>
+        Currently the app only supports goods or foods with nutrition label packaging. <br>
+        <br>
+        <b>*</b>When registering a user, the password also has a minimum requirement of length 6
+
+
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-031e"><img src="home.png" width=200 height=300>></td>
+      <td class="tg-031e"><img src="pie.png" width=200 height=300></td>
+    </tr>
+    <tr>
+      <td class="tg-031e" colspan="2"><a href="https://www.youtube.com/watch?v=BhaWfZK7wek&feature=emb_title">Youtube Link</a></td>
+    </tr>
+    <tr>
+      <td class="tg-031e" colspan="2">
+        List of external libraries and code used in this project<br>
+        <ul>
+          <li>Android Piechart
+            <ul>
+              <li>Link: <a href="https://github.com/PhilJay/MPAndroidChart">https://github.com/PhilJay/MPAndroidChart</a></li>
+              <li>Uses: Draw piecharts on the app.</li>
+            </ul>
+          </li>
+          <li>Firebase Firestore
+            <ul>
+              <li>Link: <a href="https://cloud.google.com/firestore/docs/">https://cloud.google.com/firestore/docs/</a></li>
+              <li>Uses: Database for storing users registered and logged into the app.
+            </ul>
+          </li>
+          <li>Text Recognizer
+            <ul>
+              <li>Link: <a href="https://firebase.google.com/docs/ml-kit/android/recognize-text">https://firebase.google.com/docs/ml-kit/android/recognize-text</a></li>
+              <li>Uses: Parse images containing texts to obtain information as String: obtain nutrition values from
+                nutrition label.</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <p style="text-align: right;"><a href="https://www.umd.edu/web-accessibility" title="UMD Web Accessibility">Web
+      Accessibility</a></p>
+</body>
+
+</html>
